@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+project(Tetris)
+add_definitions(-Wall)
+set(CMAKE_CXX_STANDARD 14)
+set(sources main.cpp)
+add_executable(${PROJECT_NAME} ${sources})
+target_link_libraries(${PROJECT_NAME} sfml_system sfml_window sfml_Graphics)
